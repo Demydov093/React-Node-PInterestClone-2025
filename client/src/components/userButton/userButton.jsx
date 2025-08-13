@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './userButton.css';
 import Image from '../image/image';
+import { Link } from 'react-router';
 
 const UserButton = () => {
 
@@ -19,7 +20,7 @@ const currentUser = true;
           className='arrow' 
          />
         {open && <div className="userOptions">
-          <div className="userOption">Profile</div>
+          <Link to='/profile' className="userOption">Profile</Link>
           <div className="userOption">Settings</div>
           <div className="userOption">Logout</div>
         </div>}
