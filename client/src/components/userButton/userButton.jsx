@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 const UserButton = () => {
 
-const [open, setOpen] = useState(false);
+const [open, setOpen] = useState(true);
 
 //TEMP 
 const currentUser = true;

@@ -1,0 +1,111 @@
+.uploadTop {
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uploadTop h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.uploadTop button {
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding: 16px;
+    border-radius: 32px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.uploadBottom {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.uploadFile {
+    background-color: antiquewhite;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    border: dashed 2px grey;
+    width: 375px;
+    height: 575px;
+    padding: 16px;
+    position: relative;
+}
+
+.uploadTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.uploadInfo {
+    position: absolute;
+    bottom: 32px;
+    font-size: 13px;
+    text-align: center;
+    color: gray;
+}
+
+.uploadForm {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 580px;
+}
+
+.uploadFormItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.uploadFormItem label {
+    font-size: 13px;
+    color: grey;
+}
+
+.uploadFormItem input,
+textarea,
+select {
+    font-size: 15px;
+    color: grey;
+    border: solid 1px gray;
+    border-radius: 16px;
+    padding: 16px;
+    resize: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .uploadBottom {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .uploadForm {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .uploadFile {
+        width: 100%;
+    }
+}
